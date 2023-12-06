@@ -107,5 +107,5 @@ target_link_libraries(
     ${BINARY_NAME}
     ${REQUIRED_LIBS_QUALIFIED}
     ${PYTHON_LIBRARIES}
-    OpenSSL::Crypto
+    ${OPENSSL_LIBRARIES}
 )

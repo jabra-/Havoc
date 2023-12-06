@@ -21,14 +21,14 @@ public:
     void run();
 
 public slots:
-    auto connected() -> void;
-    auto closed() -> void;
-    auto receivedEvent( const QByteArray &message ) -> void;
+    void connected();
+    void closed();
+    void receivedEvent( const QByteArray &message );
 
 signals:
     /* dispatch json event */
-    auto availableEvent( const QByteArray& event ) -> void;
-    auto socketClosed() -> void;
+    void availableEvent( const QByteArray& event );
+    void socketClosed();
 };
 
 #endif //HAVOCCLIENT_EVENTWORKER_H
